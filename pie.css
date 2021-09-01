@@ -1,0 +1,51 @@
+body
+{
+    background-color: #808080;
+    text-decoration-color: #404040;
+}
+
+hr
+{
+    height: 3px;
+    margin: 5px;
+    background-color: white;
+}
+h1
+{
+    text-align: center;
+    font-size: 22pt;
+}
+h2,h3,h4,h5,h6
+{
+    text-align: center;
+    font-size: 18pt;
+}
+h1,h2,h3,h4,h5,h6
+{
+    color:  #A4A400;
+    background-color: #F0F0F0;
+    font-family: 'Lucida Sans Unicode', 'Helvetica', 'Arial','sans-serif';
+    text-decoration: underline;
+}
+
+a
+{
+    color: rgb(105, 44, 44);
+}
+
+li
+{
+    color: white;
+}
+
+p
+{
+    color: white;
+    font-style: italic;
+}
+
+img
+{
+    width: 250px;
+    
+}
