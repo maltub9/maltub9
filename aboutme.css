@@ -1,0 +1,38 @@
+body
+{
+    background-color: #808080;
+}
+
+hr
+{
+    height: 3px;
+    margin: 5px;
+    background-color: white;
+}
+
+h1,h2
+{
+    color: rgb(67, 180, 180);
+}
+
+a
+{
+    color: rgb(105, 44, 44);
+}
+
+li
+{
+    color: white;
+}
+
+p
+{
+    color: white;
+    font-style: italic;
+}
+
+img
+{
+    width: 250px;
+    
+}
