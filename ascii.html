@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CS472: ASCII Animation Viewer</title>
+    <link rel="stylesheet" href="ascii.css">
+    <script type = "text/javascript" src="ascii.js"></script>
+    <script type = "text/javascript" src="animations.js"></script>
+</head>
+
+<body>
+    <h1>CS472: ASCII Animation Viewer</h1>
+    <textarea cols="80" rows="20" id='mytextarea'></textarea>
+    <table>
+        <tr>
+            <td>
+                <fieldset>
+                    <legend>Play Controls:</legend>
+                    <button onclick="play()">Start</button>
+                    <button onclick="stop()">Stop</button>
+                </fieldset>
+            </td>
+            <td>
+                <fieldset>
+                    <legend>Animation:</legend>
+                    <select onchange="animatex()" id='animation'>
+                        <option>Blank</option>
+                        <option>Exercise</option>
+                        <option>Juggler</option>
+                        <option>Bike</option>
+                        <option>Dive</option>
+                        <option>Custom</option>
+                    </select>
+                </fieldset>
+            </td>
+            <td>
+                <fieldset>
+                    <legend>Size:</legend>
+                    <select onchange="changeFont()" id='sizeBox'>
+                        <option value="7pt">Tiny (7pt)</option>
+                        <option value="10pt">Small (10pt)</option>
+                        <option value="12pt">Medium (12pt)</option>
+                        <option value="16pt">Large (16pt),</option>
+                        <option value="24pt">Extra Large (24pt)</option>
+                        <option value="32pt">XXL (32pt)</option>
+                    </select>
+                </fieldset>
+            </td>
+            <td>
+                <fieldset>
+                    <legend>Speed:</legend>
+                    <input type="checkbox" id='turboCheck' onclick="turbo()" />Turbo
+                </fieldset>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>
