@@ -56,3 +56,8 @@ table {
     
   }
 
+  input[type=text]
+  {
+    width: 30px;
+  }
+
