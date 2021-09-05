@@ -1,0 +1,35 @@
+<htm>
+    <head>
+
+    </head>
+    <body>
+        <button onclick="kick1()">q1 - a</button><br>
+        <button onclick="kick2()">q1 - b</button><br>
+        <button onclick="q3()">q3</button>
+    </body>
+</htm>
+<script>
+    function kick1() {
+        setTimeout(booyah, 2000);
+    }
+    function kick2() {
+        setTimeout(booyah(), 2000);
+    }
+    function booyah() {
+        alert("booyah");
+    }
+
+    function booyah1() {
+        alert("booyah1");
+    }
+
+    function booyah2() {
+        alert("booyah2");
+    }
+
+    function q3() {
+        setTimeout(booyah1, 2000);
+        setTimeout(booyah2(), 2000);
+    }
+
+</script>
