@@ -11,7 +11,7 @@ function calcTip() {
 	var subtotal = parseInt(subtotalElem.value);
 	var tip = parseInt( tipElem.value);
 	var total = 100000;
-	totalElem.innerHTML = '$' + (subtotal+(subtotal*tip));
+	totalElem.innerHTML = '$' + (subtotal+(subtotal*(tip/100)));
 }
 
 </script>
