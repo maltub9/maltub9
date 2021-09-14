@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+		<title>Closure lab</title>
+
+	</head>
+
+	<body>
+		<h1>The closure Lab</h1>
+        <table>
+            <tr>
+                <td>
+                    Account Name:
+                </td>
+                <td>
+                    <input type="text" id='AccountName' />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Deposit:
+                </td>
+                <td>
+                    <input type="text" id='DepositAcct' />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" id='createButton' value="Create new account" onclick="addAccount()"/>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <textarea id='resultText' cols="100" rows="20">
+
+                    </textarea>
+                </td>
+                <td>
+                    
+                </td>
+            </tr>
+        </table>
+<script>
+
+    var AccountInfoList=new Array();
+
+    function Account(_name,_balance) {
+        return {name:_name,balance:_balance};
+    }
+
+    function addAccount() {
+        accountHub.add();
+        document.getElementById('resultText').value=accountHub.accountString();
+    }
+
+    var accountHub = (function () {
+        
+        return{
+            add:function() {
+                AccountInfoList[AccountInfoList.length]=new Account(document.getElementById('AccountName').value,document.getElementById('DepositAcct').value)
+            },
+            accountString:function () {
+                var str = "";
+                for (let index = 0; index < AccountInfoList.length; index++) {
+                        str += "Account Name: " + AccountInfoList[index].name + " Balance: " + AccountInfoList[index].balance + "\n";
+                    }
+
+                    return str;
+            }
+        }
+    })();
+
+</script>
+</body></html>
